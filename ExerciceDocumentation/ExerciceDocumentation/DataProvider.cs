@@ -30,9 +30,8 @@ namespace ExerciceDocumentation
         /// <code>
         ///     lstDisplay.Items.Add(data.GetSingleLineOfData(3));
         /// </code>
-        /// <param name="indexOfData">L'index de la ligne désirée dans la base de données.</param>
-        /// 
         /// </summary>
+        /// <param name="indexOfData">L'index de la ligne désirée dans la base de données.</param>
         public List<string> DataCollection { get; }
 
         public SqlConnection Connection { get; }
