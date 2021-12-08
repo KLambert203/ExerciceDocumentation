@@ -5,6 +5,8 @@
 
 - [DataProvider](#T-ExerciceDocumentation-DataProvider 'ExerciceDocumentation.DataProvider')
   - [DataCollection](#P-ExerciceDocumentation-DataProvider-DataCollection 'ExerciceDocumentation.DataProvider.DataCollection')
+  - [GetAllData()](#M-ExerciceDocumentation-DataProvider-GetAllData 'ExerciceDocumentation.DataProvider.GetAllData')
+  - [GetSingleLineOfData(indexOfData)](#M-ExerciceDocumentation-DataProvider-GetSingleLineOfData-System-Int32- 'ExerciceDocumentation.DataProvider.GetSingleLineOfData(System.Int32)')
 
 <a name='T-ExerciceDocumentation-DataProvider'></a>
 ## DataProvider `type`
@@ -27,6 +29,11 @@ Pour l'initialiser, vous devez avoir en main votre connection string. Vous pouve
     DataProvider data = new DataProvider("connexionAVotreDb");
 ```
 
+<a name='M-ExerciceDocumentation-DataProvider-GetAllData'></a>
+### GetAllData() `method`
+
+##### Summary
+
 Vous pouvez accéder à toute les données avec une liste de string:
 
 ```
@@ -36,8 +43,31 @@ Vous pouvez accéder à toute les données avec une liste de string:
     }
 ```
 
-ou recevoir une ligne de données directement avec son index.:
+##### Returns
+
+Cette fonction retourne toute la base de données sous forme de liste de string.
+
+##### Parameters
+
+This method has no parameters.
+
+<a name='M-ExerciceDocumentation-DataProvider-GetSingleLineOfData-System-Int32-'></a>
+### GetSingleLineOfData(indexOfData) `method`
+
+##### Summary
+
+Cette fonction sert à itérer une seule ligne de notre base de données. Elle s'appelle de cette façon:
 
 ```
-lstDisplay.Items.Add(data.GetSingleLineOfData(3)
+lstDisplay.Items.Add(data.GetSingleLineOfData(3));
 ```
+
+##### Returns
+
+
+
+##### Parameters
+
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| indexOfData | [System.Int32](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Int32 'System.Int32') | L'index de la ligne a itérer. |
