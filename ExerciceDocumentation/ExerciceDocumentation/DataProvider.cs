@@ -28,9 +28,9 @@ namespace ExerciceDocumentation
         /// 
         /// ou recevoir une ligne de données directement avec son index.:
         /// <code>
-        ///     lstDisplay.Items.Add(data.GetSingleLineOfData(3)
-        ///     <param name="indexOfData">L'index de la ligne désirée dans la base de données.</param>
+        ///     lstDisplay.Items.Add(data.GetSingleLineOfData(3));
         /// </code>
+        /// <param name="indexOfData">L'index de la ligne désirée dans la base de données.</param>
         /// 
         /// </summary>
         public List<string> DataCollection { get; }
